@@ -1,0 +1,55 @@
+body {
+  text-align: center;
+  font-family: Arial;
+}
+#camera {
+  border: 2px solid black;
+  width: 300px;
+  height: auto;
+}
+button {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+#strip img {
+  border: 10px solid white;
+  box-shadow: 0 0 10px gray;
+  margin: 10px 0;
+  width: 200px;
+}
+.polaroid {
+  background: white;
+  padding: 10px;
+  border: 2px solid #ddd;
+  display: inline-block;
+  text-align: center;
+  margin: 5px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+.polaroid img {
+  max-width: 150px;
+  display: block;
+}
+
+.caption {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #333;
+  width: 90%;
+}
+button {
+  margin: 5px;
+  padding: 8px 16px;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #006F8E;
+}
+

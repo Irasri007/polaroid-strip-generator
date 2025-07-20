@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Polaroid Strip App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Polaroid Strip Creator</h1>
+
+  <video id="camera" autoplay></video>
+
+  <div id="filters">
+    <button onclick="setFilter('none')">Normal</button>
+    <button onclick="setFilter('grayscale(100%)')">Grayscale</button>
+    <button onclick="setFilter('sepia(100%)')">Sepia</button>
+    <button onclick="setFilter('invert(100%)')">Invert</button>
+    <button onclick="setFilter('brightness(150%)')">Bright</button>
+    <button onclick="downloadStrip()">Download Strip</button>
+    <input type="file" id="imageUpload" accept="image/*" multiple onchange="handleUpload(event)">
+
+
+  </div>
+
+  <button onclick="startCapture()">Capture 3 Photos</button>
+  <button onclick="uploadStrip()">Upload Strip</button>
+
+  <div id="strip"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
